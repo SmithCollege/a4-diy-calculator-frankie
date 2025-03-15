@@ -42,9 +42,9 @@ public class Postfix {
                 System.out.println(stack);
             }
             else if (tokens.peekFirst() instanceof Character){
-                // if (stack.size()<=2){
-                //     throw new IllegalArgumentException();
-                // }
+                if (stack.size()<=1){
+                    throw new IllegalArgumentException();
+                }
                 Double firstElem= stack.pop();
                 Double secondElem= stack.pop();
                 Character operator= (Character) tokens.removeFirst();
