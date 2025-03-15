@@ -12,5 +12,8 @@ Any references used besides JavaDoc and course materials:
 
 Reflection on your experience with this assignment:
 
+This is the first assignment I've felt like I've done independently. Usually I rely on office hours to get the brunt of my work done, with a lot of step by step help. But I was able to do most of the postfix function myself. I did need help debug a slight problem that I wouldn't have noticed by myself, but I had all the elements outside of that. I'm still a little lost on what the goal of the infix method is, so I wasn't able to get to that. I probably just missed when we discussed infix in class. But when I go back to do A2 I'll also revisit this assignment to finish it fully.
+
+
 This assignment does lend itself to more visual prototyping, so please feel free to go this route. Are you including slides, pseudocode, comments, or something else?
 
