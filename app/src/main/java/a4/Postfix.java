@@ -10,15 +10,27 @@ public class Postfix {
      * @return Double: result of problem
      */
     public static double postfix(ArrayDeque<Object> tokens) {
-        if (tokens.size()<=2){
+        if (tokens.isEmpty()){
             throw new IllegalArgumentException();
         }
-        if (!(tokens.peek() instanceof Double)){
-            throw new IllegalArgumentException();
-        }
-        if (!(tokens.peek() instanceof Character)){
-            throw new IllegalArgumentException();
-        }
+        // ArrayDeque<Object> toCheck= tokens.clone();
+        // int doublecounter=0;
+        // int charactercounter=0;
+        // while (!(toCheck.isEmpty())){
+        //     if ((toCheck.peek() instanceof Double)){
+        //         doublecounter+= 1;
+        //         if ((tokens.peek() instanceof Character)){
+        //             charactercounter+=1; 
+        //         }
+        //     }
+        //    toCheck.removeFirst(); 
+        // }
+        // if (doublecounter<2){
+        //     throw new IllegalArgumentException();
+        // }
+        // if (charactercounter<1){
+        //     throw new IllegalArgumentException();
+        // }
         
         ArrayDeque <Double> stack= new ArrayDeque<>();
         System.out.println(tokens.size());
@@ -30,9 +42,9 @@ public class Postfix {
                 System.out.println(stack);
             }
             else if (tokens.peekFirst() instanceof Character){
-                if (stack.size()<=2){
-                    throw new IllegalArgumentException();
-                }
+                // if (stack.size()<=2){
+                //     throw new IllegalArgumentException();
+                // }
                 Double firstElem= stack.pop();
                 Double secondElem= stack.pop();
                 Character operator= (Character) tokens.removeFirst();
