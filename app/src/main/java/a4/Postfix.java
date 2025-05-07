@@ -2,6 +2,11 @@ package a4;
 
 import java.util.ArrayDeque;
 
+/**finds output for postfix problem
+ * 
+ * 
+ * @author Frankie
+ */
 public class Postfix {
 
     /**finds output for postfix problem
@@ -13,24 +18,6 @@ public class Postfix {
         if (tokens.isEmpty()){
             throw new IllegalArgumentException();
         }
-        // ArrayDeque<Object> toCheck= tokens.clone();
-        // int doublecounter=0;
-        // int charactercounter=0;
-        // while (!(toCheck.isEmpty())){
-        //     if ((toCheck.peek() instanceof Double)){
-        //         doublecounter+= 1;
-        //         if ((tokens.peek() instanceof Character)){
-        //             charactercounter+=1; 
-        //         }
-        //     }
-        //    toCheck.removeFirst(); 
-        // }
-        // if (doublecounter<2){
-        //     throw new IllegalArgumentException();
-        // }
-        // if (charactercounter<1){
-        //     throw new IllegalArgumentException();
-        // }
         
         ArrayDeque <Double> stack= new ArrayDeque<>();
         System.out.println(tokens.size());

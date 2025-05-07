@@ -2,9 +2,17 @@ package a4;
 
 import java.util.ArrayDeque;
 
+/**
+ * Converts from infix to postfix expression then calculates answer
+ * @author Frankie
+ */
 public class Infix {
 
-
+/**
+ * 
+ * @param ch
+ * @return precedence score of operator
+ */
     static int getPrecedence(char ch)
     {
 
@@ -18,7 +26,11 @@ public class Infix {
             return -1;
     }
 
-     // Operator has Left --> Right associativity
+/**
+ * 
+ * @param ch
+ * @return whether operator has left associativity
+ */
      static boolean hasLeftAssociativity(char ch) {
         if (ch == '+' || ch == '-' || ch == '/' || ch == '*') {
             return true;
@@ -26,6 +38,12 @@ public class Infix {
             return false;
         }
     }
+
+/**
+ * 
+ * @param tokens infix expression tokenized
+ * @return answer via postfix calculation
+ */
     public static Double infixToPostfix(ArrayDeque<Object> tokens) {
         ArrayDeque <Object> stack= new ArrayDeque<>();
         ArrayDeque <Object> output= new ArrayDeque<>();
