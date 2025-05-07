@@ -9,6 +9,7 @@ Group Member Name(s):
 Other collaborators you worked with, including TAs (and feel free to give a shoutout to anyone who was particularly helpful):
 
 Any references used besides JavaDoc and course materials:
+The wiki on SYA was really helpful to break down infix to postfix
 
 Reflection on your experience with this assignment:
 
@@ -17,3 +18,4 @@ This is the first assignment I've felt like I've done independently. Usually I r
 
 This assignment does lend itself to more visual prototyping, so please feel free to go this route. Are you including slides, pseudocode, comments, or something else?
 
+I had a sample problem I did step by step as a model. but i didn't take a photo.
