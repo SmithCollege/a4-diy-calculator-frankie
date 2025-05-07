@@ -45,9 +45,10 @@ public class Postfix {
                 if (stack.size()<=1){
                     throw new IllegalArgumentException();
                 }
+                Character operator= (Character) tokens.removeFirst();
                 Double firstElem= stack.pop();
                 Double secondElem= stack.pop();
-                Character operator= (Character) tokens.removeFirst();
+                
                 if (operator== Character.valueOf('*')){
                     Double result=secondElem*firstElem;
                     stack.push(result);
@@ -62,6 +63,10 @@ public class Postfix {
                 }
                 else if (operator== '/'){
                     Double result=secondElem/firstElem;
+                    stack.push(result);
+                }
+                else if (operator=='^'){
+                    Double result= Math.pow(secondElem, firstElem);
                     stack.push(result);
                 }
                 else{System.out.println("error");}

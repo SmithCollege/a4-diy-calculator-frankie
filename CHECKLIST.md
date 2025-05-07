@@ -26,13 +26,13 @@ YES 1 pts: Throws an exception with an informative error message in case of malf
 
 Calculate.java:
 
-NO 1 pts: Implements shunting-yard algorithm to produce queue of tokens
+YES 1 pts: Implements shunting-yard algorithm to produce queue of tokens
 
-NO 1 pt: Output of shunt yard passed to postfix via queue
+YES 1 pt: Output of shunt yard passed to postfix via queue
 
 YES 1 pt: Computes correct arithmetic results for +, -, *, and / operations
 
-NO 1 pt: Properly handles operators with different associative properties (e.g. ^) using the full Wikipedia algorithm
+YES 1 pt: Properly handles operators with different associative properties (e.g. ^) using the full Wikipedia algorithm
 
 
 
